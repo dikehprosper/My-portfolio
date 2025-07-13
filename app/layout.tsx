@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Chibuike Amadi",
+  title: "Prosper Dike",
   description: "my portfolio",
 };
 
