@@ -1,13 +1,7 @@
 "use client"
 
 import React from 'react';
-import {
-  Circle,
-  ExternalLink,
-  MoreHorizontal,
-  PlayIcon,
-  Github,
-} from "lucide-react";
+import {ExternalLink, PlayIcon, Github} from "lucide-react";
 import {faCircle} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 interface Project {

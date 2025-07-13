@@ -17,10 +17,10 @@ const About: React.FC = () => {
         <div className='flex mx-auto items-center w-[60%] text-center'>
           <div className='space-y-6'>
             <p className='text-lg text-gray-700 dark:text-gray-300 leading-relaxed'>
-              I'm a{" "}
+              I'm a
               <span className='font-semibold text-emerald-600 dark:text-emerald-400'>
                 result-driven Full Stack Software Engineer
-              </span>{" "}
+              </span>
               with a strong focus on building scalable, secure, and intuitive
               web and mobile applications that drive real business value.
             </p>
