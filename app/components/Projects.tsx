@@ -66,7 +66,8 @@ const Projects: React.FC = () => {
       ],
       frontend: "https://github.com/dikehprosper/lamedcashapp",
       backend: "https://github.com/dikehprosper/TheBetFundrAppBackend",
-      youtube_link: "https://www.youtube.com/watch?v=6Vu-vuRcf3Q",
+      youtube_link:
+        "https://drive.google.com/file/d/18WdJHDzuxKAcB-6T2RUcPjdAjTqPSnYf/view?usp=sharing",
     },
     {
       id: 2,
@@ -349,7 +350,7 @@ const Projects: React.FC = () => {
                       rel='noopener noreferrer'
                       className='flex-1 min-w-0 flex items-center justify-center gap-1 px-2 py-2 bg-red-600 hover:bg-red-700 text-white text-xs sm:text-sm font-medium rounded transition-colors duration-300'
                     >
-                      <span className='truncate'>youtube</span>
+                      <span className='truncate'>video</span>
                       <PlayIcon size={12} />
                     </a>
                   )}
