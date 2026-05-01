@@ -18,7 +18,7 @@ export default function ClientHome() {
     <Hero />
     <About />
     <Skills />
-    <Projects />
+    {/* <Projects /> */}
     <Contact />
     <Footer />
   </div>
