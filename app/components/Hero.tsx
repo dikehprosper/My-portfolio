@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
               <span className='relative inline-block'>
                 Into
                 <Sparkles
-                  className='absolute -top-8 -right-8 text-emerald-600 dark:text-emerald-400 animate-float'
+                  className='absolute sm:-top-8 -top-12 sm:-right-8 -right-8 text-emerald-600 dark:text-emerald-400 animate-float'
                   size={24}
                 />
               </span>{" "}

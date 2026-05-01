@@ -14,15 +14,16 @@ const About: React.FC = () => {
           <div className='w-20 h-1 bg-emerald-600 dark:bg-emerald-400 mx-auto'></div>
         </div>
 
-        <div className='flex mx-auto items-center w-[60%] text-center'>
+        <div className='flex mx-auto items-center sm:w-[60%] w-[90%] text-center'>
           <div className='space-y-6'>
             <p className='text-lg text-gray-700 dark:text-gray-300 leading-relaxed'>
               I&apos;m a
               <span className='font-semibold text-emerald-600 dark:text-emerald-400'>
-                result-driven Full Stack Software Engineer
+                {""} result-driven Full Stack Software Engineer
               </span>
-              with a strong focus on building scalable, secure, and intuitive
-              web and mobile applications that drive real business value.
+              {""} with a strong focus on building scalable, secure, and
+              intuitive web and mobile applications that drive real business
+              value.
             </p>
 
             <p className='text-lg text-gray-700 dark:text-gray-300 leading-relaxed'>

@@ -68,72 +68,7 @@ const Projects: React.FC = () => {
       backend: "https://github.com/dikehprosper/TheBetFundrAppBackend",
       youtube_link:
         "https://drive.google.com/file/d/18WdJHDzuxKAcB-6T2RUcPjdAjTqPSnYf/view?usp=sharing",
-    },
-    {
-      id: 2,
-      title: "Hydra",
-      description:
-        "Colaborated on an Electronic Medical Record for keeping track of patient visit and manageing staff for hospitals.",
-      image: "/hydra.png",
-      tags: ["React", "Node.js", "Postgres", "Redux"],
-      liveUrl: "https://provider.gethydra.io",
-    },
-    {
-      id: 3,
-      title: "ZENTRA",
-      description:
-        "Designed and developed Zentra, a scalable and secure cryptocurrency simulation platform. The application provides an intuitive user interface and robust backend to simulate core features of a modern app for sending and receiving cryptocurrencies. Key features include:",
-      title_description1: "User Authentication:",
-      description1:
-        "Secure registration, login, and password reset functionality.",
-      title_description2: "Two-Factor Authentication (2FA):",
-      description2: "Additional security layer using TOTP-based 2FA.",
-      title_description3: "Live Feed:",
-      description3:
-        "Real-time updates simulating cryptocurrency transactions and network activity.",
-      title_description4: "Referral System:",
-      description4:
-        "Unique referral links to encourage user growth and engagement.",
-      title_description5: "Support System:",
-      description5:
-        "In-app ticketing system allowing users to raise and track issues.",
-      image: "/zentra.png",
-      tags: [
-        "Frontend: Next.js, React, Tailwind CSS, Redux",
-        "Backend: Next.js API Routes, MongoDB, Mongoose, Nodemailer",
-        "Authentication & Security: JWT, bcrypt.js, Two-Factor Authentication (TOTP)",
-        "Web 3",
-      ],
-      liveUrl: "https://sample-project-roan.vercel.app/",
-      Github_Code: "https://github.com/dikehprosper/sample-project",
-      youtube_link: "https://youtu.be/siO-epQLCII",
-    },
-    {
-      id: 4,
-      title: "Rigourplus",
-      description:
-        "Collaborated on an interactive dashboard that allow users access health services from the comfort of their homes.",
-      image: "/rigourplus.png",
-      tags: ["Next.js", "TypeScript", "Tailwind", "SEO"],
-      liveUrl: "https://web.rigourplus.com",
-    },
-    // {
-    //   id: 5,
-    //   title: "BigCheq Consulting Co",
-    //   description:
-    //     "A web based platform empowering businesses to achieve extraordinary growth through insightful strategy and innovative technology.",
-    //   image: "/bigcheq.png",
-    //   tags: ["React", "Tailwind"],
-    //   liveUrl: "https://www.bigcheqconsultingco.com",
-    // },
-    // {
-    //   id: 6,
-    //   title: 'Weather Application',
-    //   description: 'A responsive weather application with location-based forecasts, interactive maps, and historical data.',
-    //   image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    //   tags: ['JavaScript', 'React', 'REST API', 'CSS'],
-    //   liveUrl: null
-    // }
+    }
   ];
 
   return (
@@ -144,11 +79,11 @@ const Projects: React.FC = () => {
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='text-center mb-16'>
           <h2 className='text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4'>
-            Recent Projects Worked On
+           Projects
           </h2>
           <div className='w-20 h-1 bg-emerald-600 dark:bg-emerald-400 mx-auto'></div>
           <p className='mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto'>
-            Here are some of the recent projects I&apos;ve worked on. Each one
+            Here are some of the projects I&apos;ve worked on. Each one
             presented unique challenges and opportunities to apply my skills.
           </p>
         </div>

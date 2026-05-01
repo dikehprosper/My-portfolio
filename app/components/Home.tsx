@@ -13,14 +13,14 @@ export default function ClientHome() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className="antialiased transition-colors duration-300">
-    <Navbar theme={theme} toggleTheme={toggleTheme} />
-    <Hero />
-    <About />
-    <Skills />
-    {/* <Projects /> */}
-    <Contact />
-    <Footer />
-  </div>
+    <div className='antialiased transition-colors duration-300 overflow-x-hidden w-full max-w-full'>
+      <Navbar theme={theme} toggleTheme={toggleTheme} />
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
