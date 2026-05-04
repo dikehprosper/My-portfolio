@@ -68,7 +68,35 @@ const Projects: React.FC = () => {
       backend: "https://github.com/dikehprosper/TheBetFundrAppBackend",
       youtube_link:
         "https://drive.google.com/file/d/18WdJHDzuxKAcB-6T2RUcPjdAjTqPSnYf/view?usp=sharing",
-    }
+    },
+    {
+      id: 2,
+      title: "MiniLab OS",
+      description:
+        "I designed, developed, and deployed a fully responsive laboratory management system featuring mock data and real-time UI interactions",
+
+      title_description1: "Patient Management:",
+      description1:
+        "Add, search, and manage patients with test assignment, contact info, and payment status tracking.",
+
+      title_description2: "Test & Payment Tracking:",
+      description2:
+        "Record payments, view paid/partial/unpaid statuses with progress bars, and maintain a full transaction history with references and payment methods.",
+
+      title_description3: "Result Management:",
+      description3:
+        "Input test results per sample/patient, and view a running result history.",
+
+      title_description7: "Other Features:",
+      description7:
+        "Fully responsive across mobile, tablet, and desktop. Mobile-first bottom navigation with card layouts. Desktop sidebar with data tables and 2-column grid. Live dashboard charts (bar + doughnut via Chart.js), toast notifications for all key actions, and avatar generation from initials.",
+
+      image: "/minilab-os.png",
+
+      tags: [],
+
+      liveUrl: "https://lab-management-kappa.vercel.app/",
+    },
   ];
 
   return (
@@ -79,7 +107,7 @@ const Projects: React.FC = () => {
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='text-center mb-16'>
           <h2 className='text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4'>
-           Projects
+            Projects
           </h2>
           <div className='w-20 h-1 bg-emerald-600 dark:bg-emerald-400 mx-auto'></div>
           <p className='mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto'>
@@ -221,16 +249,19 @@ const Projects: React.FC = () => {
                     {project.description7}
                   </p>
                 )}
-                <div className='flex flex-wrap gap-2 mb-4'>
-                  {project.tags.map((tag, index) => (
-                    <span
-                      key={index}
-                      className='text-xs font-medium px-2 py-1 rounded bg-emerald-100 text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300'
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+                {project.tags &&
+                  project.tags.length > 0 && (
+                    <div className='flex flex-wrap gap-2 mb-8'>
+                      {project.tags.map((tag, index) => (
+                        <span
+                          key={index}
+                          className='text-xs font-medium px-2 py-1 rounded bg-emerald-100 text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300'
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 <div className='flex justify-between items-center gap-2 w-full max-w-full flex-shrink'>
                   {project.liveUrl && (
                     <a
