@@ -37,6 +37,80 @@ interface Project {
 }
 
 /* ------------------------------------------------------------------ */
+/* DIGISHELF                                                           */
+/* ------------------------------------------------------------------ */
+
+const digishelf: Project = {
+  title: "Digishelf",
+  kind: "Digital products marketplace",
+  livelink: "https://digishelf-five.vercel.app/",
+  image: "/digishelf.png",
+  overview:
+    "I built a full-stack marketplace where customers can discover and purchase digital products, creators can run their storefronts, and admins can manage the platform.",
+  frontend: {
+    label: "Frontend",
+    summary: "The storefront, creator studio and admin console.",
+    icon: <Smartphone size={18} />,
+    stack: [
+      "React 19",
+      "React Router",
+      "Redux Toolkit",
+      "RTK Query",
+      "Tailwind CSS",
+    ],
+    features: [
+      {
+        title: "Storefront and customer accounts",
+        text: "Browse and search products, view creator pages, manage a cart and wishlist, check out, and access purchased downloads from a personal library.",
+      },
+      {
+        title: "Creator dashboard",
+        text: "Set up a profile and storefront, manage products and uploads, organize course curriculum, create coupons, and review sales and payouts.",
+      },
+      {
+        title: "Admin dashboard",
+        text: "Manage users, moderate products and reviews, oversee orders, refunds, coupons and payouts, and configure reports, banners and platform settings.",
+      },
+      {
+        title: "Authentication",
+        text: "Register, sign in, reset passwords and verify email with secure cookie-based sessions.",
+      },
+    ],
+  },
+  backend: {
+    label: "Backend",
+    summary: "The marketplace API and business logic.",
+    icon: <Server size={18} />,
+    stack: [
+      "Node.js",
+      "Express 5",
+      "MongoDB",
+      "Mongoose",
+      "Paystack",
+      "Cloudinary",
+    ],
+    features: [
+      {
+        title: "Catalog and commerce",
+        text: "Product discovery, creator storefronts, cart and wishlist, checkout, orders, coupons, reviews and payment verification.",
+      },
+      {
+        title: "Creator services",
+        text: "Creator profiles, product and curriculum management, sales reporting, bank details and payout workflows.",
+      },
+      {
+        title: "Admin operations",
+        text: "Administrative APIs for users, product and review moderation, orders and refunds, payouts, reports, banners, settings and audit history.",
+      },
+      {
+        title: "Accounts and downloads",
+        text: "Secure cookie sessions, refresh-token rotation, email verification, and short-lived signed links for private product downloads.",
+      },
+    ],
+  },
+};
+
+/* ------------------------------------------------------------------ */
 /* LAMEDCASH                                                           */
 /* ------------------------------------------------------------------ */
 
@@ -237,7 +311,7 @@ const corePostgres: Project = {
   },
 };
 
-const projects: Project[] = [coreMongo, corePostgres, lamedcash];
+const projects: Project[] = [digishelf, coreMongo, corePostgres, lamedcash];
 
 /* ------------------------------------------------------------------ */
 /* UI                                                                  */
