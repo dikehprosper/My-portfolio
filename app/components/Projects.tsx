@@ -111,6 +111,81 @@ const digishelf: Project = {
 };
 
 /* ------------------------------------------------------------------ */
+/* KONFAM                                                              */
+/* ------------------------------------------------------------------ */
+
+const konfam: Project = {
+  title: "Konfam",
+  kind: "Prediction markets platform",
+  image: "/konfam.png",
+  livelink: "https://konfam-rust.vercel.app/",
+  overview:
+    "I built Konfam as a full-stack prediction markets platform. Users can explore markets, trade on outcomes, and manage their portfolio through a responsive web app backed by a custom API.",
+  frontend: {
+    label: "Frontend",
+    summary: "The responsive web application.",
+    icon: <Smartphone size={18} />,
+    stack: [
+      "React 19",
+      "React Router",
+      "Redux Toolkit",
+      "TanStack Query",
+      "Tailwind CSS",
+      "Socket.IO Client",
+    ],
+    features: [
+      {
+        title: "Market discovery and trading",
+        text: "Browse markets, view market details and trade on outcomes.",
+      },
+      {
+        title: "Portfolio and wallet",
+        text: "Review portfolio activity, wallet balances, deposits and transaction history.",
+      },
+      {
+        title: "Accounts and notifications",
+        text: "Email and Google sign-in, watchlists, account settings and in-app notifications.",
+      },
+      {
+        title: "Responsive experience",
+        text: "Mobile-friendly layouts with light and dark themes.",
+      },
+    ],
+  },
+  backend: {
+    label: "Backend",
+    summary: "The API and platform services.",
+    icon: <Server size={18} />,
+    stack: [
+      "Node.js",
+      "Express 5",
+      "PostgreSQL",
+      "Sequelize",
+      "JWT",
+      "Google OAuth",
+    ],
+    features: [
+      {
+        title: "Authentication",
+        text: "Account registration, login, Google sign-in, password recovery and token verification.",
+      },
+      {
+        title: "Markets and trading",
+        text: "API services for market data, trades and portfolio activity.",
+      },
+      {
+        title: "Wallet services",
+        text: "Wallet balances, deposits and transaction history.",
+      },
+      {
+        title: "Account services",
+        text: "Profile, watchlist, settings and notification APIs backed by PostgreSQL.",
+      },
+    ],
+  },
+};
+
+/* ------------------------------------------------------------------ */
 /* LAMEDCASH                                                           */
 /* ------------------------------------------------------------------ */
 
@@ -311,7 +386,13 @@ const corePostgres: Project = {
   },
 };
 
-const projects: Project[] = [digishelf, coreMongo, corePostgres, lamedcash];
+const projects: Project[] = [
+  digishelf,
+  konfam,
+  coreMongo,
+  corePostgres,
+  lamedcash,
+];
 
 /* ------------------------------------------------------------------ */
 /* UI                                                                  */
